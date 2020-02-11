@@ -22,7 +22,7 @@ const Home = ({
             <Container>
                 <div>
                     <div>
-                        <span>Welcome to Client Connect</span>
+                        <span>Welcome to CC App</span>
                     </div>
                     <div>
                         <span></span>
