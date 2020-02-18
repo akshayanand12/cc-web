@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import { Container } from './ui'
+import StarsRating from 'stars-rating'
 
 const propTypes = {
     listening: PropTypes.bool,
@@ -12,6 +13,10 @@ const propTypes = {
     recognition: PropTypes.object,
     addItem: PropTypes.func
 };
+
+const ratingChanged = () => {
+    console.log('rating is changed');
+}
 
 const Home = ({
 
@@ -25,7 +30,11 @@ const Home = ({
                         <span>Welcome to CC App</span>
                     </div>
                     <div>
-                        <span></span>
+                        <StarsRating
+                            count={5}
+                            onChange={ratingChanged}
+                            size={24}
+                        />
                     </div>
                 </div>
             </Container>
